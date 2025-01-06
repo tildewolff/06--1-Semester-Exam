@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Tilde Wolff</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/menus.css" />
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Tilde Wolff's homepage, Multimedia Design student at KEA. This is the portfolio showing all work and projects from the first semester."
+    />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/icons/logo.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Genos:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <ul class="flex_space-between">
+        <li>
+          <a href="../da/01.html"><h3>DA</h3></a>
+        </li>
+        <li class="mobile_hide"><h3>01:40:56</h3></li>
+        <li class="mobile_hide"><h3>04 - 01 - 2025</h3></li>
+        <li class="desktop_hide burger_btn">
+          <a href="javascript:void(0);" onclick="toggleDisplay()">
+            <h3>PORTFOLIO</h3></a
+          >
+        </li>
+      </ul>
+      <nav>
+        <ul class="flex_end">
+          <li>
+            <a href="index.html"><h3>HOME</h3></a>
+          </li>
+          <li>
+            <a href="about.html"><h3>ABOUT</h3></a>
+          </li>
+          <li class="mobile_hide burger_btn">
+            <a href="javascript:void(0);" onclick="toggleDisplay()">
+              <h3>PORTFOLIO</h3></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="logo"><img src="../assets/icons/logo.png" alt="Logo" /></div>
+      <div id="burger_menu" style="display: none">
+        <a href="javascript:void(0);" onclick="toggleDisplay()"
+          ><img class="burger_x" src="../assets/icons/x.svg" alt="X"
+        /></a>
+        <ul>
+          <li>
+            <a class="burger_menu_item" href="01.html"
+              ><h5>01</h5>
+              <h4>INTRO</h4></a
+            >
+          </li>
+          <li>
+            <a class="burger_menu_item" href="02.html"
+              ><h5>02</h5>
+              <h4>BASIC WEB</h4></a
+            >
+          </li>
+          <li>
+            <a class="burger_menu_item" href="03.html"
+              ><h5>03</h5>
+              <h4>BASIC UX</h4></a
+            >
+          </li>
+          <li>
+            <a class="burger_menu_item" href="04.html"
+              ><h5>04</h5>
+              <h4>ANIMATION</h4></a
+            >
+          </li>
+          <li>
+            <a class="burger_menu_item" href="05.html"
+              ><h5>05</h5>
+              <h4>CONTENT</h4></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <script>
+        function toggleDisplay() {
+          var x = document.getElementById("burger_menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
+    </header>
+
+    <main><p>Main</p></main>
+    <footer><p>2024 - 2025 ALL RIGHTS RESERVED</p></footer>
+  </body>
+</html>
