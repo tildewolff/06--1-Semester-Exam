@@ -1,0 +1,77 @@
+header h3 {
+  font-family: "Genos", sans-serif;
+  color: white;
+  font-size: 24px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header .flex_space-between {
+  padding: 10px 20px;
+  border-bottom: white 1px solid;
+  padding-left: 120px;
+}
+header .flex_space-between li:first-of-type {
+  padding-right: 10px;
+}
+
+header .flex_end {
+  padding: 10px 50px;
+}
+
+a h3:hover {
+  color: #fdb009;
+}
+
+header .flex_end li {
+  padding-left: 50px;
+}
+
+.burger_btn h3 {
+  color: black;
+  background-color: #fdb009;
+  width: 175px;
+  height: 30px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.burger_btn h3:hover {
+  background-image: url(../assets/btn_gradient.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  transform: translate(20px, -84px);
+}
+
+.active {
+  text-decoration: underline;
+}
+
+@media (min-width: 700px) {
+  .burger_btn h3 {
+    width: 300px;
+    text-align: center;
+    border-radius: 30px;
+  }
+
+  .logo {
+    transform: translate(50px, -100px);
+  }
+
+  header .flex_space-between {
+    padding: 10px 50px;
+    padding-left: 170px;
+  }
+
+  header .flex_end li h3 {
+    padding: 5px 0px;
+  }
+}

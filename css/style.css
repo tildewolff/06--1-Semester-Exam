@@ -1,0 +1,59 @@
+/* RESET START */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+img {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+/* RESET END */
+
+/* FONTS START */
+
+.climate-crisis {
+  font-family: "Climate Crisis", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "YEAR" 1979;
+}
+
+.genos-regular {
+  font-family: "Genos", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.genos-italic {
+  font-family: "Genos", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Agency";
+  src: url("../assets/agencyfb_reg-webfont.woff2") format("woff2"),
+    url("../assets/agencyfb_reg-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* FONTS END */
+
+body {
+  background-image: url(../assets/noisebg.png);
+  background-repeat: repeat;
+}
