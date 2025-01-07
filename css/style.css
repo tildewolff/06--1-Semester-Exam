@@ -698,6 +698,10 @@ h1 {
   .img_02_04 {
     display: block;
   }
+
+  .decoration_05 {
+    display: block;
+  }
 }
 
 /* 02 END */
@@ -717,6 +721,13 @@ h1 {
 }
 
 .section_03 .portfolio_link {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.section_04 .portfolio_link {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   border-top-right-radius: 50px;
@@ -746,6 +757,23 @@ h1 {
 
 .decoration_04 img {
   width: 100%;
+}
+
+.decoration_05 {
+  display: none;
+}
+
+.portfolio_videos {
+  margin: 20px;
+}
+
+.video_1 {
+  border: #fdb009 1px solid;
+  margin-bottom: 20px;
+}
+
+.video_2 {
+  border: #fdb009 1px solid;
 }
 
 /* 04 END */
