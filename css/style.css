@@ -342,6 +342,79 @@ h1 {
   width: 650px;
   pointer-events: none;
 }
+
+.company_logo {
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.company_logo:first-of-type {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.about_section div {
+  margin-right: auto;
+  margin-left: auto;
+  width: 380px;
+}
+
+.about_section p {
+  color: white;
+  font-family: "Agency", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: justify;
+  padding-bottom: 20px;
+}
+
+.about_section h2 {
+  color: #fdb009;
+  font-family: "Genos", sans-serif;
+  font-size: 64px;
+  text-align: center;
+}
+
+.about_section h6 {
+  color: #fdb009;
+  font-family: "Agency", sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+.about_section h3 {
+  color: white;
+  font-family: "Genos", sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.working_experience {
+  margin-bottom: 100px;
+  padding-bottom: 50px;
+}
+
+.about_section ul {
+  list-style: circle;
+  padding-left: 20%;
+}
+
+.about_section ul li {
+  color: white;
+  font-family: "Agency", sans-serif;
+  font-size: 24px;
+}
+.about_06 {
+  background-color: #262626;
+}
+
+.about_07 {
+  background-color: #262626;
+}
+
 @media (min-width: 700px) {
 }
 
@@ -405,6 +478,17 @@ h1 {
     font-family: "Agency", sans-serif;
     font-size: 24px;
     padding: 5px 20px;
+  }
+
+  .working_experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1200px;
+  }
+
+  .about_section div {
+    width: auto;
+    padding: 20px;
   }
 }
 
