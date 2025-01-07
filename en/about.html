@@ -30,8 +30,8 @@
         <li>
           <a href="../da/about.html"><h3>DA</h3></a>
         </li>
-        <li class="mobile_hide"><h3>01:40:56</h3></li>
-        <li class="mobile_hide"><h3>04 - 01 - 2025</h3></li>
+        <li class="mobile_hide"><h3 id="clock"></h3></li>
+        <li class="mobile_hide"><h3 id="date"></h3></li>
         <li class="desktop_hide burger_btn">
           <a href="javascript:void(0);" onclick="toggleDisplay()">
             <h3>PORTFOLIO</h3></a
@@ -105,6 +105,7 @@
     </header>
 
     <main>
+      <div class="cursor"></div>
       <h1>WHO AM I?</h1>
 
       <div class="about_mobile desktop_hide">
@@ -199,7 +200,7 @@
       <img class="chevron" src="../assets/icons/chevron.svg" alt="Chevron" />
 
       <section class="about_section">
-        <h3>WORKING EXPERIENCE // WORKING EXPERIENCE //</h3>
+        <h3>WORKING EXPERIENCE</h3>
         <div class="working_experience">
           <div>
             <h2>2023-2025</h2>
@@ -256,7 +257,7 @@
       </section>
 
       <section class="about_section">
-        <h3>COMPETENCIES & EDUCATION // COMPETENCIES & EDUCATION //</h3>
+        <h3>COMPETENCIES & EDUCATION</h3>
         <div class="working_experience">
           <div>
             <h2>2024-2026</h2>
@@ -327,5 +328,6 @@
       </div>
       <p>2024 - 2025 ALL RIGHTS RESERVED</p>
     </footer>
+    <script src="../js/clock.js"></script>
   </body>
 </html>
