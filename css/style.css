@@ -307,3 +307,105 @@ h1 {
 }
 
 /* INDEX END */
+
+/* ABOUT START */
+
+.about_mobile div {
+  border: #fdb009 solid 1px;
+  width: 378px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about_mobile p {
+  color: white;
+  font-family: "Agency", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.about_mobile img {
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  pointer-events: none;
+}
+
+.grid_1-1-1 {
+  display: none;
+}
+
+.tablet_about {
+  width: 650px;
+  pointer-events: none;
+}
+@media (min-width: 700px) {
+}
+
+@media (min-width: 1150px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 350px 310px 350px 1fr;
+    gap: 20px;
+  }
+
+  .about_01 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    pointer-events: none;
+  }
+
+  .about_02 {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    pointer-events: none;
+  }
+
+  .about_05 {
+    grid-column: 3/5;
+    grid-row: 2/4;
+    border: #fdb009 solid 1px;
+  }
+
+  .about_06 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: #fdb009 solid 1px;
+  }
+
+  .about_07 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    border: #fdb009 solid 1px;
+  }
+
+  .grid_1-1-1 p {
+    color: white;
+    font-family: "Agency", sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    padding: 20px;
+    text-align: justify;
+  }
+
+  .grid_1-1-1 h3 {
+    color: white;
+    font-family: "Genos";
+    font-size: 40px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .grid_1-1-1 ul li {
+    color: #fdb009;
+    font-family: "Agency", sans-serif;
+    font-size: 24px;
+    padding: 5px 20px;
+  }
+}
+
+/* ABOUT END */
