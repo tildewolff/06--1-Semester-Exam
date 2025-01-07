@@ -129,3 +129,47 @@ header .flex_end li {
     width: 600px;
   }
 }
+
+footer h3 {
+  color: white;
+  font-size: 24px;
+  font-family: "Genos", sans-serif;
+  text-align: center;
+  border-bottom: 1px white solid;
+  padding-bottom: 10px;
+}
+
+footer h3:hover {
+  color: #fdb009;
+}
+
+.social_media {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+}
+
+footer p {
+  color: white;
+  font-family: "Genos", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.footer_logo {
+  display: none;
+}
+
+@media (min-width: 1150px) {
+  .footer_logo {
+    margin-left: auto;
+    display: block;
+    margin-right: 50px;
+    position: absolute;
+    transform: translate(90vw, 0);
+  }
+}
