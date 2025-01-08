@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01 - Intro - Tilde Wolff</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/menus.css" />
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Velkommen til Tilde Wolff's hjemmeside, en Multimediedesign studerende på KEA. Dette er en portfolio der viser alt arbejde, samt et CV og kontaktinformation."
+    />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/icons/logo.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Genos:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <ul class="flex_space-between">
+        <li>
+          <a href="../en/01.html"><h3>EN</h3></a>
+        </li>
+        <li class="desktop_tablet_only"><h3 id="clock"></h3></li>
+        <li class="desktop_tablet_only"><h3 id="date"></h3></li>
+        <li class="mobile_only burger_btn">
+          <a href="javascript:void(0);" onclick="toggleDisplay()">
+            <h3>PORTFOLIO</h3></a
+          >
+        </li>
+      </ul>
+      <nav>
+        <ul class="flex_end">
+          <li>
+            <a href="index.html"><h3>FORSIDE</h3></a>
+          </li>
+          <li>
+            <a href="about.html"><h3>OM MIG</h3></a>
+          </li>
+          <li class="desktop_tablet_only burger_btn">
+            <a href="javascript:void(0);" onclick="toggleDisplay()">
+              <h3>PORTFOLIO</h3></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="logo"><img src="../assets/icons/logo.png" alt="Logo" /></div>
+      <div id="burger_menu" style="display: none">
+        <a href="javascript:void(0);" onclick="toggleDisplay()"
+          ><img class="burger_x" src="../assets/icons/x.svg" alt="X"
+        /></a>
+        <ul>
+          <li>
+            <a class="burger_menu_item" href="01.html"
+              ><h5>01</h5>
+              <h4>INTRO</h4></a
+            >
+          </li>
+          <li>
+            <a class="burger_menu_item" href="02.html"
+              ><h5>02</h5>
+              <h4>BASIC WEB</h4></a
+            >
+          </li>
+          <li>
+            <a class="burger_menu_item" href="03.html"
+              ><h5>03</h5>
+              <h4>BASIC UX</h4></a
+            >
+          </li>
+          <li>
+            <a class="burger_menu_item" href="04.html"
+              ><h5>04</h5>
+              <h4>ANIMATION</h4></a
+            >
+          </li>
+          <li>
+            <a class="burger_menu_item" href="05.html"
+              ><h5>05</h5>
+              <h4>CONTENT</h4></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <script>
+        function toggleDisplay() {
+          var x = document.getElementById("burger_menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
+    </header>
+
+    <main>
+      <div class="cursor"></div>
+      <section class="section_01">
+        <section class="portfolio_section">
+          <div class="portfolio_title">
+            <h2>01</h2>
+            <img
+              class="title_image"
+              src="../assets/icons/INTRO.webp"
+              alt="INTRO"
+            />
+          </div>
+
+          <div class="duration">
+            <h4>VARIGHED: 1 UGE<br />(26/08/24 - 30/08/24)</h4>
+            <img
+              class="duration_decal"
+              src="../assets/icons/planet_star_decal.png"
+              alt="Decoration"
+            />
+          </div>
+
+          <div class="portfolio_feature">
+            <div class="iframe_container">
+              <iframe
+                class="responsive_iframe"
+                src="https://www.youtube.com/embed/nREg6nBJVek?si=tOuWTzhVBUWptBoU"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="portfolio_learnings">
+            <h2>LÆRINGSMÅL</h2>
+            <ul>
+              <li>Købe og hoste domæner</li>
+              <li>Adobe Creative Cloud</li>
+              <li>Storyboarding til videoer</li>
+              <li>Basic Figma</li>
+              <li>FileZilla</li>
+              <li>
+                At arbejde sammen i grupper med formålet at lære hinanden at
+                kende
+              </li>
+              <li>Simpel videoredigering</li>
+              <li>Lyd-optagelse og -mixing (acapella)</li>
+              <li>Læse bogen “Interfacedesign” af M. Rold, 2024</li>
+            </ul>
+          </div>
+
+          <div class="portfolio_paragraph">
+            <p>
+              For den første uge af studiet fik vi en ugelang gruppeoplevelse
+              med målet at lære hinanden at kende. Vi skulle lave en video, der
+              fulgte stiliseringen af en titelsekvens. Vores valg faldt på
+              showet "The Office", og vi brugte etableringsbilleder og filmstil
+              herfra til at skabe vores video.
+            </p>
+            <p>
+              Jeg var personligt ansvarlig for at lave baggrundsmusikken. For at
+              gøre det hele lidt mere "fjollet" lavede jeg den a cappella ved at
+              synge de forskellige instrumenter fra "The Office"s introtema og
+              lægge dem oven på hinanden i det gratis program Audacity.
+            </p>
+            <p>
+              Vi optog primært videoen i MLS, MCU og MS afstande, med både
+              fugleperspektiv og frøperspektiv afhængigt af optagelsen.
+            </p>
+          </div>
+          <div class="decoration_01">
+            <img src="../assets/01_image.webp" alt="Decoration" />
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <img class="footer_logo" src="../assets/icons/logo.png" alt="Logo" />
+      <div
+        onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()"
+      >
+        <h3>BACK TO TOP</h3>
+      </div>
+      <div class="social_media">
+        <a href="https://www.linkedin.com/in/tilde-wolff/"
+          ><img src="../assets/icons/linkedin.svg" alt="LinkedIn"
+        /></a>
+        <a href="https://www.instagram.com/tildewolff"
+          ><img src="../assets/icons/instagram.svg" alt="Instagram"
+        /></a>
+        <a href="https://github.com/tildewolff"
+          ><img src="../assets/icons/github.svg" alt="GitHub"
+        /></a>
+      </div>
+      <p>2024 - 2025 ALL RIGHTS RESERVED</p>
+    </footer>
+    <script src="../js/clock.js"></script>
+  </body>
+</html>

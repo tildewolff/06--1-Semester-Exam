@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04 - Animation - Tilde Wolff</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/menus.css" />
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Velkommen til Tilde Wolff's hjemmeside, en Multimediedesign studerende på KEA. Dette er en portfolio der viser alt arbejde, samt et CV og kontaktinformation."
+    />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/icons/logo.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Genos:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <ul class="flex_space-between">
+        <li>
+          <a href="../en/04.html"><h3>EN</h3></a>
+        </li>
+        <li class="desktop_tablet_only"><h3 id="clock"></h3></li>
+        <li class="desktop_tablet_only"><h3 id="date"></h3></li>
+        <li class="mobile_only burger_btn">
+          <a href="javascript:void(0);" onclick="toggleDisplay()">
+            <h3>PORTFOLIO</h3></a
+          >
+        </li>
+      </ul>
+      <nav>
+        <ul class="flex_end">
+          <li>
+            <a href="index.html"><h3>FORSIDE</h3></a>
+          </li>
+          <li>
+            <a href="about.html"><h3>OM MIG</h3></a>
+          </li>
+          <li class="desktop_tablet_only burger_btn">
+            <a href="javascript:void(0);" onclick="toggleDisplay()">
+              <h3>PORTFOLIO</h3></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="logo"><img src="../assets/icons/logo.png" alt="Logo" /></div>
+      <div id="burger_menu" style="display: none">
+        <a href="javascript:void(0);" onclick="toggleDisplay()"
+          ><img class="burger_x" src="../assets/icons/x.svg" alt="X"
+        /></a>
+        <ul>
+          <li>
+            <a class="burger_menu_item" href="01.html"
+              ><h5>01</h5>
+              <h4>INTRO</h4></a
+            >
+          </li>
+          <li>
+            <a class="burger_menu_item" href="02.html"
+              ><h5>02</h5>
+              <h4>BASIC WEB</h4></a
+            >
+          </li>
+          <li>
+            <a class="burger_menu_item" href="03.html"
+              ><h5>03</h5>
+              <h4>BASIC UX</h4></a
+            >
+          </li>
+          <li>
+            <a class="burger_menu_item" href="04.html"
+              ><h5>04</h5>
+              <h4>ANIMATION</h4></a
+            >
+          </li>
+          <li>
+            <a class="burger_menu_item" href="05.html"
+              ><h5>05</h5>
+              <h4>CONTENT</h4></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <script>
+        function toggleDisplay() {
+          var x = document.getElementById("burger_menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
+    </header>
+
+    <main>
+      <div class="cursor"></div>
+      <section class="section_04">
+        <section class="portfolio_section">
+          <div class="portfolio_title">
+            <h2>04</h2>
+            <img
+              class="title_image"
+              src="../assets/icons/ANIMATION.webp"
+              alt="ANIMATION"
+            />
+          </div>
+
+          <div class="duration">
+            <h4>VARIGHED: 4 UGER<br />(28/10/24 - 22/11/24)</h4>
+            <img
+              class="duration_decal"
+              src="../assets/icons/planet_star_decal.png"
+              alt="Decoration"
+            />
+          </div>
+
+          <div class="portfolio_feature">
+            <div class="figma_embed">
+              <iframe
+                width="100%;"
+                height="400"
+                src="https://embed.figma.com/design/tOammt8EYDkfbyfYLtG5Tp/Tema-04-Dokumentation?node-id=1-2&embed-host=share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="portfolio_learnings">
+            <h2>LÆRINGSMÅL</h2>
+            <ul>
+              <li>JavaScript</li>
+              <li>SVG illustration & eksport</li>
+              <li>Aktivitetsdiagrammer</li>
+              <li>CSS animationer & transforms</li>
+              <li>Introduktion to Git</li>
+              <li>State Machine diagrammer</li>
+              <li>Random og Math funktioner</li>
+              <li>Don’t Repeat Yourself</li>
+              <li>Lyd-optagelse og -redigering</li>
+              <li>Audio web implementation</li>
+            </ul>
+          </div>
+          <ul class="portfolio_links links_1">
+            <li class="portfolio_link main_link">
+              <a
+                href="https://tildewolff.com/kea/04_animation/website/index.html"
+              >
+                PRIMÆR PROJEKTHJEMMESIDE
+              </a>
+            </li>
+            <li class="portfolio_link">
+              <a
+                href="https://tildewolff.com/kea/04_animation/16-animationer/index.html"
+              >
+                ØVELSE 16 ANIMATIONER
+              </a>
+            </li>
+            <li class="portfolio_link">
+              <a
+                href="https://tildewolff.com/kea/04_animation/effekt_1_2_3/klik_hop.html"
+              >
+                ØVELSE JS EFFEKTER 1-3
+              </a>
+            </li>
+            <li class="portfolio_link">
+              <a
+                href="https://tildewolff.com/kea/04_animation/effekt_5_6_7_8/drej_hop.html"
+              >
+                ØVELSE JS EFFEKTER 5-8
+              </a>
+            </li>
+          </ul>
+
+          <div class="portfolio_paragraph">
+            <p>
+              Målet med animationstemaet var at skabe et simpelt browser-spil,
+              hvor gameplayet bestod i at klikke på de gode objekter, der
+              bevæger sig ned fra oven, og undgå de dårlige. Spillet indeholdte
+              funktioner som at holde styr på liv/hjerter, point og at afgøre,
+              om man vinder eller taber baseret på ens præstation.
+            </p>
+            <p>
+              Selvfølgelig skulle alt også have animationer, og de
+              illustrationer og assets, der blev brugt i spillet, skulle vi selv
+              lave. Mit spil tog form som en "dating-simulator", hvor at en sød
+              pige har ting, hun kan lide og ikke kan lide. For at vinde skal
+              man opnå nok point ved at vælge de ting, hun kan lide, og undgå
+              dem, hun ikke kan lide, inden for den fastsatte tid. Jeg
+              skitserede mine assets i Clip Studio Paint, som er mit foretrukne
+              software, og tegnede dem derefter som farvede svg-filer i Adobe
+              Illustrator.
+            </p>
+            <p>
+              Jeg indspillede mine lydfiler i Adobe Audition og brugte
+              royalty-fri musik til mit spil. Den mest udfordrende del af dette
+              projekt var at kode HTML’en på en helt anden måde end det, vi
+              tidligere havde lært, da containerne og klasserne animerede
+              elementerne i stedet for at stå som selvstændigt indhold.
+            </p>
+            <p>
+              Jeg brugte Git til at holde styr på min fremgang og versioner for
+              at dokumentere min arbejdsproces korrekt.
+            </p>
+          </div>
+
+          <div class="decoration_04">
+            <img src="../assets/activitydiagram.webp" alt="Activity Diagram" />
+          </div>
+
+          <ul class="portfolio_links links_2">
+            <li class="portfolio_link">
+              <a href="https://github.com/tildewolff/website">
+                GITHUB PROJEKT
+              </a>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <img class="footer_logo" src="../assets/icons/logo.png" alt="Logo" />
+      <div
+        onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()"
+      >
+        <h3>BACK TO TOP</h3>
+      </div>
+      <div class="social_media">
+        <a href="https://www.linkedin.com/in/tilde-wolff/"
+          ><img src="../assets/icons/linkedin.svg" alt="LinkedIn"
+        /></a>
+        <a href="https://www.instagram.com/tildewolff"
+          ><img src="../assets/icons/instagram.svg" alt="Instagram"
+        /></a>
+        <a href="https://github.com/tildewolff"
+          ><img src="../assets/icons/github.svg" alt="GitHub"
+        /></a>
+      </div>
+      <p>2024 - 2025 ALL RIGHTS RESERVED</p>
+    </footer>
+    <script src="../js/clock.js"></script>
+  </body>
+</html>

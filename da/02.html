@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02 - Basic Web - Tilde Wolff</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/menus.css" />
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Velkommen til Tilde Wolff's hjemmeside, en Multimediedesign studerende på KEA. Dette er en portfolio der viser alt arbejde, samt et CV og kontaktinformation."
+    />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/icons/logo.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Genos:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <ul class="flex_space-between">
+        <li>
+          <a href="../en/02.html"><h3>EN</h3></a>
+        </li>
+        <li class="desktop_tablet_only"><h3 id="clock"></h3></li>
+        <li class="desktop_tablet_only"><h3 id="date"></h3></li>
+        <li class="mobile_only burger_btn">
+          <a href="javascript:void(0);" onclick="toggleDisplay()">
+            <h3>PORTFOLIO</h3></a
+          >
+        </li>
+      </ul>
+      <nav>
+        <ul class="flex_end">
+          <li>
+            <a href="index.html"><h3>FORSIDE</h3></a>
+          </li>
+          <li>
+            <a href="about.html"><h3>OM MIG</h3></a>
+          </li>
+          <li class="desktop_tablet_only burger_btn">
+            <a href="javascript:void(0);" onclick="toggleDisplay()">
+              <h3>PORTFOLIO</h3></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="logo"><img src="../assets/icons/logo.png" alt="Logo" /></div>
+      <div id="burger_menu" style="display: none">
+        <a href="javascript:void(0);" onclick="toggleDisplay()"
+          ><img class="burger_x" src="../assets/icons/x.svg" alt="X"
+        /></a>
+        <ul>
+          <li>
+            <a class="burger_menu_item" href="01.html"
+              ><h5>01</h5>
+              <h4>INTRO</h4></a
+            >
+          </li>
+          <li>
+            <a class="burger_menu_item" href="02.html"
+              ><h5>02</h5>
+              <h4>BASIC WEB</h4></a
+            >
+          </li>
+          <li>
+            <a class="burger_menu_item" href="03.html"
+              ><h5>03</h5>
+              <h4>BASIC UX</h4></a
+            >
+          </li>
+          <li>
+            <a class="burger_menu_item" href="04.html"
+              ><h5>04</h5>
+              <h4>ANIMATION</h4></a
+            >
+          </li>
+          <li>
+            <a class="burger_menu_item" href="05.html"
+              ><h5>05</h5>
+              <h4>CONTENT</h4></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <script>
+        function toggleDisplay() {
+          var x = document.getElementById("burger_menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
+    </header>
+
+    <main>
+      <div class="cursor"></div>
+      <section class="section_02">
+        <section class="portfolio_section">
+          <div class="portfolio_title">
+            <h2>02</h2>
+            <img
+              class="title_image"
+              src="../assets/icons/BASIC_WEB.webp"
+              alt="BASIC WEB"
+            />
+          </div>
+
+          <div class="duration">
+            <h4>VARIGHED: 3 UGER<br />(02/09/24 - 20/09/24)</h4>
+            <img
+              class="duration_decal"
+              src="../assets/icons/planet_star_decal.png"
+              alt="Decoration"
+            />
+          </div>
+
+          <div class="portfolio_feature">
+            <img class="img_02_01" src="../assets/02_01.webp" alt="Computere" />
+            <img
+              class="img_02_02"
+              src="../assets/02_02.webp"
+              alt="Operativsystemer"
+            />
+            <img
+              class="img_02_03"
+              src="../assets/02_03.webp"
+              alt="Komponenter"
+            />
+            <img class="img_02_04" src="../assets/02_04.webp" alt="Galleri" />
+            <img
+              class="img_02_05"
+              src="../assets/icons/circle_star_decal.svg"
+              alt="Decoration"
+            />
+          </div>
+
+          <div class="portfolio_learnings">
+            <h2>LÆRINGSMÅL</h2>
+            <ul>
+              <li>Introduktion til HTML</li>
+              <li>Introduktion til CSS</li>
+              <li>Grids og Flexboxes</li>
+              <li>Media Queries & responsivt webdesign</li>
+              <li>
+                4 stile (Retro vs, Futuristisk, Modernisme vs. Postmodernisme)
+              </li>
+              <li>Webfonts & unikke fonts</li>
+              <li>Gestalt designlove</li>
+              <li>Validering & troubleshooting</li>
+            </ul>
+          </div>
+          <ul class="portfolio_links">
+            <li class="portfolio_link main_link">
+              <a
+                href="http://tildewolff.com/kea/02_web/01_website/website/index.html"
+              >
+                PRIMÆR PROJEKTHJEMMESIDE
+              </a>
+            </li>
+            <li class="portfolio_link">
+              <a
+                href="http://www.tildewolff.com/kea/02_web/visitkort/index.html"
+              >
+                ØVELSE 02.01.A
+              </a>
+            </li>
+            <li class="portfolio_link">
+              <a
+                href="http://www.tildewolff.com/kea/02_web/kaeledyr/index.html"
+              >
+                ØVELSE 02.01.B
+              </a>
+            </li>
+            <li class="portfolio_link">
+              <a
+                href="http://www.tildewolff.com/kea/02_web/20_bokse/index.html"
+              >
+                ØVELSE 02.01.C
+              </a>
+            </li>
+          </ul>
+
+          <div class="portfolio_paragraph">
+            <p>
+              Dette tema handlede om at lære begyndelsen af kodning og
+              konventionel webdesign. Vi blev undervist i at designe med en
+              "mobile first"-tilgang, ved hjælp af responsivt webdesign og
+              medieforespørgsler, så vores projekter kunne fungere problemfrit
+              på både mobil- og desktopenheder.
+            </p>
+            <p>
+              Vores første introduktion til designpsykologi var gennem
+              Gestalt-lovene, som vi lærte at anvende i vores design for at
+              vide, hvornår vi skulle følge lovene, og hvornår vi bevidst skulle
+              bryde dem.
+            </p>
+            <p>
+              Det afsluttende projekt for dette tema var en simpel hjemmeside om
+              computere, som vi lavede i HTML og CSS baseret på et wireframe og
+              indhold, vi fik udleveret. Dette var også vores
+              optagelsesaktivitetsprøve.
+            </p>
+          </div>
+
+          <div class="decoration_02"></div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <img class="footer_logo" src="../assets/icons/logo.png" alt="Logo" />
+      <div
+        onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()"
+      >
+        <h3>BACK TO TOP</h3>
+      </div>
+      <div class="social_media">
+        <a href="https://www.linkedin.com/in/tilde-wolff/"
+          ><img src="../assets/icons/linkedin.svg" alt="LinkedIn"
+        /></a>
+        <a href="https://www.instagram.com/tildewolff"
+          ><img src="../assets/icons/instagram.svg" alt="Instagram"
+        /></a>
+        <a href="https://github.com/tildewolff"
+          ><img src="../assets/icons/github.svg" alt="GitHub"
+        /></a>
+      </div>
+      <p>2024 - 2025 ALL RIGHTS RESERVED</p>
+    </footer>
+    <script src="../js/clock.js"></script>
+  </body>
+</html>
