@@ -6,14 +6,6 @@
   display: block;
 }
 
-.mobile_hide {
-  display: none;
-}
-
-.desktop_hide {
-  display: block;
-}
-
 header .flex_end {
   display: flex;
   justify-content: end;
@@ -53,13 +45,6 @@ header .flex_space-between {
 }
 
 @media (min-width: 700px) {
-  .mobile_hide {
-    display: block;
-  }
-
-  .desktop_hide {
-    display: none;
-  }
 }
 
 @media (min-width: 1150px) {

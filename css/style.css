@@ -165,13 +165,6 @@ section {
     inset 0px -11px 10px -10px #131313;
 }
 
-.grid_1-1 .desktop_hide {
-  margin-left: auto;
-  margin-right: auto;
-  width: 380px;
-  padding-bottom: 20px;
-}
-
 .grid_1-1 {
   padding-bottom: 100px;
 }
@@ -189,14 +182,6 @@ h1 {
   color: #fdb009;
   text-align: center;
   padding: 50px 0px;
-}
-
-.tablet_only {
-  display: none;
-}
-
-.tablet_hide {
-  display: none;
 }
 
 @media (min-width: 700px) {
@@ -230,42 +215,12 @@ h1 {
     background-position: center -100px;
   }
 
-  .tablet_hide {
-    display: none;
-  }
-
-  .tablet_only {
-    display: block;
-  }
-
-  .grid_1-1 .mobile_hide,
-  .tablet_only {
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-  }
-
   .hero {
     background-position: center -50px;
   }
 }
 
 @media (min-width: 1150px) {
-  .grid_1-1 .mobile_hide,
-  .tablet_only {
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 0px;
-  }
-
-  .tablet_hide {
-    display: block;
-  }
-
-  .tablet_only {
-    display: none;
-  }
-
   .grid_1-1 img {
     width: 100%;
   }
@@ -299,10 +254,6 @@ h1 {
   .index_05 {
     grid-column: 2/4;
     grid-row: 4/5;
-  }
-
-  .mobile_hide {
-    padding-bottom: 0;
   }
 }
 
@@ -828,10 +779,86 @@ h1 {
   }
 }
 
-@media (min-width: 1150px) {
-  .desktop_hide {
+.mobile_only {
+  display: block;
+}
+
+.tablet_only {
+  display: none;
+}
+
+.desktop_tablet_only {
+  display: none;
+}
+
+.desktop_only {
+  display: none;
+}
+
+.grid_1-1 {
+  width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid_1-1 .mobile_only {
+  padding-bottom: 20px;
+}
+
+@media (min-width: 700px) {
+  .mobile_only {
     display: none;
-    width: 0%;
-    height: 0%;
+  }
+
+  .tablet_only {
+    display: block;
+  }
+
+  .desktop_tablet_only {
+    display: block;
+  }
+
+  .desktop_only {
+    display: none;
+  }
+
+  .grid_1-1 {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grid_1-1 .tablet_only {
+    padding-bottom: 20px;
+  }
+
+  .grid_1-1 .desktop_tablet_only {
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .mobile_only {
+    display: none;
+  }
+
+  .tablet_only {
+    display: none;
+  }
+
+  .desktop_tablet_only {
+    display: block;
+  }
+
+  .desktop_only {
+    display: block;
+  }
+
+  .grid_1-1 {
+    width: auto;
+  }
+
+  .grid_1-1 .desktop_tablet_only {
+    padding-bottom: 0px;
   }
 }
